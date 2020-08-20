@@ -1,0 +1,56 @@
+Crear proyecto en node:
+npm init --yes
+Instalar herramientas(dependencia):
+npm install express
+Instalar dependecia de desarrollo:
+npm install nodemon -D
+npm install morgan
+npm install mongoose
+npm install webpack -D
+npm install webpack-cli -D
+npm install react react-dom
+npm install babel-core babel-loader babel-preset-react babel-preset-env -D
+npm install babel-loader -save
+path ya viene instalado
+
+{
+  "name": "mern-stack-tasks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node  src/index.js",
+    "dev": "nodemon src/index.js",
+    "webpack": "webpack --mode development --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.0",
+    "morgan": "^1.10.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "nodemon": "^2.0.4",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
+
+
+
+comando diferente a start
+npm start
+npm run dev
+
+
+Base de datos:
+mongoose.connect() ----> url de la base datos, ya se local o url provusta por un servidor
